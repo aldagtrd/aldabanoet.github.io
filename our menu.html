@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Canteen UTDI</title>
+    <title>index</title>
     <style>
         body {
 	    color: white;
@@ -74,30 +72,35 @@
         <div class="menu-item">
             <img src="mieayam.png" WIDTH="50" HEIGHT="50">
             <h3>Mie Ayam</h3>
-            <p>Harga:8k</p>
-            <button>Order Now</button>
+            <p>Harga:Rp.8,000</p>
+             <button onclick="orderNow('Mie Ayam')">Order Now</button>
         </div>
         <div class="menu-item">
             <img src="bakso.png" alt="Menu 2">
             <h3>Bakso</h3>
-            <p>Harga:10k</p>
-            <button>Order Now</button>
+            <p>Harga:Rp.10,000</p>
+             <button onclick="orderNow('Bakso')">Order Now</button>
         </div>
         <div class="menu-item">
             <img src="batagor.png" alt="Menu 3">
             <h3>Batagor</h3>
-            <p>Harga:7k</p>
-            <button>Order Now</button>
+            <p>Harga:Rp.7,000</p>
+            <button onclick="orderNow('Batagor')">Order Now</button>
         </div>
         <div class="menu-item">
             <img src="ayam geprek.png" alt="Menu 4">
             <h3>Ayam Geprek</h3>
-            <p>Harga:12k</p>
-            <button>Order Now</button>
+            <p>Harga:Rp.12,000</p>
+            <button onclick="orderNow('Ayam Geprek')">Order Now</button>
         </div>
     </section>
     <footer>
         <p>&copy; 2024 E-Canteen. All rights reserved.</p>
+	    <script>
+        function orderNow(menuItem) {
+            alert('You have ordered: ' + menuItem);
+        }
+    </script>
     </footer>
 </body>
 </html>
